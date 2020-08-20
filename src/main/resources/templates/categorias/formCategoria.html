@@ -5,6 +5,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Formulario de Categorias 2</h1>
+	<h1>Formulario de Categorias</h1>
+	<form th:action="@{/categorias/save}" method="post">
+		Nombre:<br> <input type="text" name="nombre" value=""> <br>
+		Descripcion:<br> <input type="text" name="descripcion" value="">
+		<br>
+		<br> <input type="submit" value="Guardar">
+	</form>
 </body>
 </html>
