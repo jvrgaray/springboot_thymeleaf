@@ -15,6 +15,7 @@
 			<th>Salario</th>
 			<th>Descripcion</th>
 			<th>Destacada</th>
+			<th>Detalle</th>
 		</tr>
 		<tr th:each="vacante:${vacantes}">
 			<td th:text="${vacante.id}"></td>
@@ -26,7 +27,9 @@
 			<td>
 			<span th:if="${vacante.destacado==1}" class="badge badge-success">si</span>
 			<span th:unless="${vacante.destacado==1}" class="badge badge-danger">no</span>
-
+			</td>
+			<td>
+			<a th:href="@{/vacantes/view/{id} (id=${vacante.id})}" class="btn btn-success">Ver Detalle</a>
 			</td>
 		</tr>
 	</table>
