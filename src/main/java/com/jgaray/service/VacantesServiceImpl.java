@@ -17,12 +17,15 @@ import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.jgaray.model.Vacante;
 
 /**
  * @author 2b-0088
  *
  */
+@Service
 public class VacantesServiceImpl implements IVacanteService {
 
 	private List<Vacante> lista = null;
@@ -78,8 +81,7 @@ public class VacantesServiceImpl implements IVacanteService {
 
 	@Override
 	public List<Vacante> buscarTodas() {
-		// TODO Auto-generated method stub
-		return null;
+		return lista;
 	}
 
 }
