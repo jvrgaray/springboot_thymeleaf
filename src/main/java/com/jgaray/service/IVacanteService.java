@@ -22,4 +22,6 @@ import com.jgaray.model.Vacante;
  */
 public interface IVacanteService {
 	List<Vacante> buscarTodas();
+	
+	Vacante buscarPorId(Integer id);
 }
